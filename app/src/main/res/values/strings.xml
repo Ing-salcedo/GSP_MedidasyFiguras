@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">GSP_MedidasyFiguras</string>
+    <string name="titulo_opciones">OPCIONES</string>
+    <string name="areas">AREAS</string>
+    <string name="volumenes">VOLÚMENES</string>
+    <string name="operaciones_realizadas">OPERACIONES REALIZADAS</string>
+    
+    <string-array name="opciones">
+        <item>@string/areas</item>
+        <item>@string/volumenes</item>
+        <item>@string/operaciones_realizadas</item>
+    </string-array>
 </resources>

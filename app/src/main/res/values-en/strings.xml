@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GSP_MedidasyFiguras</string>
+    <string name="titulo_opciones">OPTIONS</string>
+    <string name="areas">AREAS</string>
+    <string name="volumenes">VOLUMES</string>
+    <string name="operaciones_realizadas">OPERATIONS PERFORMED</string>
+</resources>
