@@ -5,4 +5,8 @@
     <string name="areas">AREAS</string>
     <string name="volumenes">VOLUMES</string>
     <string name="operaciones_realizadas">OPERATIONS PERFORMED</string>
+    <string name="cuadrado">SQUARE</string>
+    <string name="rectangulo">RECTANGLE</string>
+    <string name="triangulo">TRIANGLE</string>
+    <string name="circulo">CIRCLE</string>
 </resources>

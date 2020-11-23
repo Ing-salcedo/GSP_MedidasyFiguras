@@ -4,10 +4,21 @@
     <string name="areas">AREAS</string>
     <string name="volumenes">VOLÚMENES</string>
     <string name="operaciones_realizadas">OPERACIONES REALIZADAS</string>
-    
+    <string name="cuadrado">CUADRADO</string>
+    <string name="rectangulo">RECTÁNGULO</string>
+    <string name="triangulo">TRIÁNGULO</string>
+    <string name="circulo">CÍRCULO</string>
+
     <string-array name="opciones">
         <item>@string/areas</item>
         <item>@string/volumenes</item>
         <item>@string/operaciones_realizadas</item>
+    </string-array>
+
+    <string-array name="arrareas">
+        <item>@string/cuadrado</item>
+        <item>@string/rectangulo</item>
+        <item>@string/triangulo</item>
+        <item>@string/circulo</item>
     </string-array>
 </resources>
