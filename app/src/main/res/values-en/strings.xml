@@ -9,4 +9,17 @@
     <string name="rectangulo">RECTANGLE</string>
     <string name="triangulo">TRIANGLE</string>
     <string name="circulo">CIRCLE</string>
+    <string name="esfera">SPHERE</string>
+    <string name="cilindro">CYLINDER</string>
+    <string name="cono">CONE</string>
+    <string name="cubo">CUBE</string>
+    <string name="valor_lado">Side Value:</string>
+    <string name="calcular">CALCULATE</string>
+    <string name="limpiar">CLEAR</string>
+    <string name="numero">No.</string>
+    <string name="operacion">Operation</string>
+    <string name="datos">Data</string>
+    <string name="resultado">Result</string>
+    <string name="mensaje_error_cuadrado">Enter the value of the side of the square</string>
+    <string name="area_del_cuadrado">Square area</string>
 </resources>

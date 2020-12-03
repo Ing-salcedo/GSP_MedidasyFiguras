@@ -8,6 +8,20 @@
     <string name="rectangulo">RECTÁNGULO</string>
     <string name="triangulo">TRIÁNGULO</string>
     <string name="circulo">CÍRCULO</string>
+    <string name="esfera">ESFERA</string>
+    <string name="cilindro">CILINDRO</string>
+    <string name="cono">CONO</string>
+    <string name="cubo">CUBO</string>
+    <string name="valor_lado">Valor del Lado: </string>
+    <string name="calcular">CALCULAR</string>
+    <string name="limpiar">LIMPIAR</string>
+    <string name="numero">No.</string>
+    <string name="operacion">Operación</string>
+    <string name="datos">Datos</string>
+    <string name="resultado">Resultado</string>
+    <string name="mensaje_error_cuadrado">Digite el valor del lado del cuadrado</string>
+    <string name="area_del_cuadrado">Area del cuadrado</string>
+
 
     <string-array name="opciones">
         <item>@string/areas</item>
@@ -20,5 +34,12 @@
         <item>@string/rectangulo</item>
         <item>@string/triangulo</item>
         <item>@string/circulo</item>
+    </string-array>
+
+    <string-array name="arrvolumenes">
+        <item>@string/esfera</item>
+        <item>@string/cilindro</item>
+        <item>@string/cono</item>
+        <item>@string/cubo</item>
     </string-array>
 </resources>
