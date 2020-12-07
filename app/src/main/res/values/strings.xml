@@ -26,6 +26,7 @@
     <string name="mensaje_error_base">Digite el valor de la base</string>
     <string name="mensaje_error_altura">Digite el valor de la altura</string>
     <string name="area_del_rectangulo">Area del Rectangulo</string>
+    <string name="area_del_triangulo">Area del Triangulo</string>
 
 
     <string-array name="opciones">

@@ -31,7 +31,7 @@ public class Rectangulo extends AppCompatActivity {
             base = Double.parseDouble(vbaserectan.getText().toString());
             altura = Double.parseDouble(valturarectan.getText().toString());
             result = base * altura;
-            vresultadorectan.setText(getString(R.string.area_del_rectangulo)+": "+result);
+            vresultadorectan.setText(getString(R.string.area_del_rectangulo)+": "+String.format("%.2f",+result));
             String strbase = new Double(base).toString();
             String straltura = new Double(altura).toString();
             dato = getString(R.string.valor_base)+" "+strbase+"\n"+getString(R.string.valor_altura)+" "+straltura;

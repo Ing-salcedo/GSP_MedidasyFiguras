@@ -31,7 +31,7 @@ public class Cuadrado extends AppCompatActivity {
         if (validar()) {
             val = Double.parseDouble(vlado.getText().toString());
             res = val * val;
-            resultado.setText(getString(R.string.area_del_cuadrado)+": " + res);
+            resultado.setText(getString(R.string.area_del_cuadrado)+": " +String.format("%.2f",res));
             String strval = new Double(val).toString();
             dato = getString(R.string.valor_lado) + " " + strval;
             o = new Operacion(opereali, dato,res);

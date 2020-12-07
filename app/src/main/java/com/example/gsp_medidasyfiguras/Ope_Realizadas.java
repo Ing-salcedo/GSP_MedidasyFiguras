@@ -3,6 +3,7 @@ package com.example.gsp_medidasyfiguras;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -40,7 +41,8 @@ public class Ope_Realizadas extends AppCompatActivity {
             fila.addView(columna_tres);
             fila.addView(columna_cuatro);
 
-            columna_uno.setGravity(View.TEXT_ALIGNMENT_CENTER);
+            columna_uno.setGravity(Gravity.CENTER_HORIZONTAL);
+            columna_cuatro.setGravity(Gravity.CENTER_HORIZONTAL);
             tabla.addView(fila);
         }
     }
