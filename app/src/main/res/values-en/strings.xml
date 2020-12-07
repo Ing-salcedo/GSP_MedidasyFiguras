@@ -27,4 +27,8 @@
     <string name="mensaje_error_base">Enter the base value</string>
     <string name="mensaje_error_altura">Enter the value of the height</string>
     <string name="area_del_rectangulo">Rectangle Area</string>
+    <string name="area_del_triangulo">Triangle Area</string>
+    <string name="area_del_circulo">Circle Area</string>
+    <string name="valor_radio">Radius value:</string>
+    <string name="mensaje_error_circulo">Enter the value of the radius of the circle</string>
 </resources>

@@ -27,6 +27,9 @@
     <string name="mensaje_error_altura">Digite el valor de la altura</string>
     <string name="area_del_rectangulo">Area del Rectangulo</string>
     <string name="area_del_triangulo">Area del Triangulo</string>
+    <string name="area_del_circulo">Area del Círculo</string>
+    <string name="valor_radio">"Valor del radio: "</string>
+    <string name="mensaje_error_circulo">Digite el valor del radio del círculo</string>
 
 
     <string-array name="opciones">
