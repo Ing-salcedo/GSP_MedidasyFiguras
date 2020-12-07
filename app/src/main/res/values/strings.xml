@@ -21,6 +21,11 @@
     <string name="resultado">Resultado</string>
     <string name="mensaje_error_cuadrado">Digite el valor del lado del cuadrado</string>
     <string name="area_del_cuadrado">Area del cuadrado</string>
+    <string name="valor_base">"Valor de la base: "</string>
+    <string name="valor_altura">"Valor de la altura: "</string>
+    <string name="mensaje_error_base">Digite el valor de la base</string>
+    <string name="mensaje_error_altura">Digite el valor de la altura</string>
+    <string name="area_del_rectangulo">Area del Rectangulo</string>
 
 
     <string-array name="opciones">

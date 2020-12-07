@@ -3,6 +3,7 @@ package com.example.gsp_medidasyfiguras;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.hardware.Camera;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -30,6 +31,10 @@ public class Areas extends AppCompatActivity {
                 switch (position){
                     case 0:
                         intent = new Intent(Areas.this, Cuadrado.class);
+                        startActivity(intent);
+                        break;
+                    case 1:
+                        intent = new Intent(Areas.this, Rectangulo.class);
                         startActivity(intent);
                         break;
                 }

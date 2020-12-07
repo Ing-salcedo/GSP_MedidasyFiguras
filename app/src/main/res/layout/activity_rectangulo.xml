@@ -3,69 +3,79 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
     android:orientation="vertical"
-    tools:context=".Cuadrado">
+    tools:context=".Rectangulo">
 
     <TextView
-        android:id="@+id/lblTituloCuadrado"
+        android:id="@+id/lblTituloRectangulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8sp"
-        android:text="@string/cuadrado"
+        android:text="@string/rectangulo"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold" />
 
+    <TextView
+        android:id="@+id/lblBaseRectangulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="@string/valor_base"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtBaseRectangulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:ems="10"
+        android:inputType="number|numberDecimal" />
+
+    <TextView
+        android:id="@+id/lblAlturaRectangulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:text="@string/valor_altura"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtAlturaRectangulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:ems="10"
+        android:inputType="number|numberDecimal" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30sp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/lblLadoCuadrado"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80sp"
-            android:text="@string/valor_lado"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/txtVlrLadoCuadrado"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10sp"
-            android:layout_marginRight="60sp"
-            android:ems="10"
-            android:inputType="number|numberDecimal" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30sp"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnCalcularCuadrado"
+            android:id="@+id/btnCalcularRectangulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="3sp"
             android:layout_marginRight="3sp"
             android:layout_weight="1"
-            android:onClick="calcularCuadra"
+            android:onClick="calcularRectan"
             android:text="@string/calcular"
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/btnLimpiarCuadrado"
+            android:id="@+id/btnLimpiarRectangulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="3sp"
             android:layout_marginRight="3sp"
             android:layout_weight="1"
-            android:onClick="limpiar"
+            android:onClick="limpiarRectangulo"
             android:text="@string/limpiar"
             android:textSize="18sp" />
     </LinearLayout>
@@ -76,7 +86,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/lblResCuadrado"
+            android:id="@+id/lblResRectangulo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12sp"
@@ -84,4 +94,5 @@
             android:textSize="18sp"
             android:textStyle="bold" />
     </LinearLayout>
+
 </LinearLayout>

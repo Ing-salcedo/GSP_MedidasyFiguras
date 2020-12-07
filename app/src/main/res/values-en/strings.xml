@@ -22,4 +22,9 @@
     <string name="resultado">Result</string>
     <string name="mensaje_error_cuadrado">Enter the value of the side of the square</string>
     <string name="area_del_cuadrado">Square area</string>
+    <string name="valor_base">Base value:</string>
+    <string name="valor_altura">Height value:</string>
+    <string name="mensaje_error_base">Enter the base value</string>
+    <string name="mensaje_error_altura">Enter the value of the height</string>
+    <string name="area_del_rectangulo">Rectangle Area</string>
 </resources>

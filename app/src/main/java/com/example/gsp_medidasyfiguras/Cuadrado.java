@@ -22,7 +22,7 @@ public class Cuadrado extends AppCompatActivity {
         resultado = findViewById(R.id.lblResCuadrado);
     }
 
-    public void calcular(View v){
+    public void calcularCuadra(View v){
         double val, res;
         String opereali = getString(R.string.area_del_cuadrado);
         String dato;
