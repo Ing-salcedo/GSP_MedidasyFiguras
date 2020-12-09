@@ -33,4 +33,5 @@
     <string name="volumen_esfera">Volume of the sphere</string>
     <string name="mensaje_error_radio">Enter the value of the radius</string>
     <string name="volumen_cilindro">Volume of the cylinder</string>
+    <string name="volumen_cono">Volume of the cone</string>
 </resources>

@@ -32,6 +32,7 @@
     <string name="mensaje_error_radio">Digite el valor del radio</string>
     <string name="volumen_esfera">Volumen de la esfera</string>
     <string name="volumen_cilindro">Volumen del cilindro</string>
+    <string name="volumen_cono">Volumen del cono</string>
 
 
     <string-array name="opciones">

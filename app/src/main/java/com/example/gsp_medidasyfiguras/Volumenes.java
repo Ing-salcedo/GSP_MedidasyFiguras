@@ -2,6 +2,7 @@ package com.example.gsp_medidasyfiguras;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -35,6 +36,10 @@ public class Volumenes extends AppCompatActivity {
                         break;
                     case 1:
                         intent = new Intent(Volumenes.this, Cilindro.class);
+                        startActivity(intent);
+                        break;
+                    case 2:
+                        intent = new Intent(Volumenes.this, Cono.class);
                         startActivity(intent);
                         break;
                 }
