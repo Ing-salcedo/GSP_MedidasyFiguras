@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Circulo">
+    tools:context=".Esfera">
 
     <TextView
-        android:id="@+id/lblTituloCirculo"
+        android:id="@+id/lblTituloEsfera"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8sp"
-        android:text="@string/circulo"
+        android:text="@string/esfera"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold" />
@@ -24,24 +24,24 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/lblRadioCirculo"
-            android:layout_width="wrap_content"
+            android:id="@+id/lblRadioEsfera"
+            android:layout_width="151dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="80sp"
+            android:layout_marginLeft="40sp"
+            android:layout_weight="1"
             android:text="@string/valor_radio"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/txtVlrRadioCirculo"
-            android:layout_width="match_parent"
+            android:id="@+id/txtVlrRadioEsfera"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10sp"
-            android:layout_marginRight="60sp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
             android:layout_weight="1"
             android:ems="10"
             android:inputType="number|numberDecimal" />
-
     </LinearLayout>
 
     <LinearLayout
@@ -51,25 +51,27 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnCalcularCirculo"
+            android:id="@+id/btnCalcularEsfera"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="3sp"
             android:layout_marginRight="3sp"
             android:layout_weight="1"
-            android:onClick="calcularcirculo"
+            android:onClick="calcularesfera"
             android:text="@string/calcular"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/btnLimpiarCirculo"
+            android:id="@+id/btnLimpiarEsfera"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="3sp"
             android:layout_marginRight="3sp"
             android:layout_weight="1"
-            android:onClick="limpiarcirculo"
+            android:onClick="limpiaresfera"
             android:text="@string/limpiar"
+            android:textSize="18sp"
             android:textStyle="bold" />
     </LinearLayout>
 
@@ -77,14 +79,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="12sp"
-        android:orientation="vertical">
+        android:orientation="vertical"></LinearLayout>
 
-        <TextView
-            android:id="@+id/lblResultadoCirculo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-    </LinearLayout>
+    <TextView
+        android:id="@+id/lblResultadoEsfera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 </LinearLayout>

@@ -5,84 +5,93 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Circulo">
+    tools:context=".Cilindro">
 
     <TextView
-        android:id="@+id/lblTituloCirculo"
+        android:id="@+id/lblTituloCilindro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8sp"
-        android:text="@string/circulo"
+        android:text="@string/cilindro"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold" />
 
+    <TextView
+        android:id="@+id/lblRadioCilindro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="@string/valor_radio"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtVlrRadioCilindro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:ems="10"
+        android:inputType="number|numberDecimal" />
+
+    <TextView
+        android:id="@+id/lblAlturaCilindro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:text="@string/valor_altura"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtVlrAlturaCilindro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:ems="10"
+        android:inputType="number|numberDecimal" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30sp"
+        android:layout_marginTop="10sp"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/lblRadioCirculo"
+        <Button
+            android:id="@+id/btnCalcularCilindro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="80sp"
-            android:text="@string/valor_radio"
+            android:layout_marginLeft="3sp"
+            android:layout_marginRight="3sp"
+            android:layout_weight="1"
+            android:onClick="calcularcilindro"
+            android:text="@string/calcular"
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/txtVlrRadioCirculo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10sp"
-            android:layout_marginRight="60sp"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="number|numberDecimal" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30sp"
-        android:orientation="horizontal">
-
         <Button
-            android:id="@+id/btnCalcularCirculo"
+            android:id="@+id/btnLimpiarCilindro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="3sp"
             android:layout_marginRight="3sp"
             android:layout_weight="1"
-            android:onClick="calcularcirculo"
-            android:text="@string/calcular"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/btnLimpiarCirculo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="3sp"
-            android:layout_marginRight="3sp"
-            android:layout_weight="1"
-            android:onClick="limpiarcirculo"
+            android:onClick="limpiarcilindro"
             android:text="@string/limpiar"
+            android:textSize="18sp"
             android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12sp"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/lblResultadoCirculo"
+            android:id="@+id/lblResultadoCilindro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
             android:textAlignment="center"
             android:textSize="18sp"
             android:textStyle="bold" />

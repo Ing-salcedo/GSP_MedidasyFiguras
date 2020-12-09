@@ -9,36 +9,34 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class Circulo extends AppCompatActivity {
+public class Esfera extends AppCompatActivity {
     private EditText vradio;
-    private TextView vresultadocirculo;
+    private TextView vresultesfera;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_circulo);
+        setContentView(R.layout.activity_esfera);
 
-        vradio = findViewById(R.id.txtVlrRadioCirculo);
-        vresultadocirculo = findViewById(R.id.lblResultadoCirculo);
+        vradio = findViewById(R.id.txtVlrRadioEsfera);
+        vresultesfera = findViewById(R.id.lblResultadoEsfera);
     }
-
-    public void calcularcirculo(View v){
+    public void calcularesfera(View v){
         double valradio, res;
-        String opereali = getString(R.string.area_del_circulo);
+        String opereali = getString(R.string.volumen_esfera);
         String dato;
         Operacion o;
 
-        if (validarcirculo()) {
+        if (validaresfera()) {
             valradio = Double.parseDouble(vradio.getText().toString());
-            res = Math.PI * Math.pow(valradio,2);
-            vresultadocirculo.setText(getString(R.string.area_del_circulo)+": " +String.format("%.2f",res));
+            res = (4 * Math.PI * Math.pow(valradio,3))/3;
+            vresultesfera.setText(getString(R.string.volumen_esfera)+": " +String.format("%.2f",res));
             String strradio = new Double(valradio).toString();
             dato = getString(R.string.valor_radio) + " " + strradio;
             o = new Operacion(opereali, dato,res);
             o.guardar();
         }
     }
-
-    public boolean validarcirculo(){
+    public boolean validaresfera(){
         if(vradio.getText().toString().isEmpty()){
             vradio.setError(getString(R.string.mensaje_error_radio));
             vradio.requestFocus();
@@ -47,9 +45,9 @@ public class Circulo extends AppCompatActivity {
         return true;
     }
 
-    public void limpiarcirculo(View v){
+    public void limpiaresfera(View v){
         vradio.setText("");
-        vresultadocirculo.setText("");
+        vresultesfera.setText("");
         vradio.requestFocus();
         InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.toggleSoftInput(InputMethodManager.SHOW_FORCED,0);
