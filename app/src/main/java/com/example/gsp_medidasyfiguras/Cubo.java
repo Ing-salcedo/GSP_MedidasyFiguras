@@ -9,29 +9,28 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class Cuadrado extends AppCompatActivity {
+public class Cubo extends AppCompatActivity {
     private EditText vlado;
     private TextView resultado;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cuadrado);
+        setContentView(R.layout.activity_cubo);
 
-        vlado = findViewById(R.id.txtVlrLadoCuadrado);
-        resultado = findViewById(R.id.lblResCuadrado);
+        vlado = findViewById(R.id.txtVlrLadoCubo);
+        resultado = findViewById(R.id.lblResCubo);
     }
 
-    public void calcularCuadra(View v){
+    public void calcularCubo(View v){
         double val, res;
-        String opereali = getString(R.string.area_del_cuadrado);
+        String opereali = getString(R.string.volumen_cubo);
         String dato;
         Operacion o;
 
-        if (validar()) {
+        if (validarcubo()) {
             val = Double.parseDouble(vlado.getText().toString());
-            res = Math.pow(val,2);
-            resultado.setText(getString(R.string.area_del_cuadrado)+": " +String.format("%.2f",res));
+            res = Math.pow(val,3);
+            resultado.setText(getString(R.string.volumen_cubo)+": " +String.format("%.2f",res));
             String strval = new Double(val).toString();
             dato = getString(R.string.valor_lado) + " " + strval;
             o = new Operacion(opereali, dato,res);
@@ -39,7 +38,7 @@ public class Cuadrado extends AppCompatActivity {
         }
     }
 
-    public boolean validar(){
+    public boolean validarcubo(){
         if(vlado.getText().toString().isEmpty()){
             vlado.setError(getString(R.string.mensaje_error_lado));
             vlado.requestFocus();
@@ -48,11 +47,12 @@ public class Cuadrado extends AppCompatActivity {
         return true;
     }
 
-    public void limpiar(View v){
+    public void limpiarcubo(View v){
         vlado.setText("");
         resultado.setText("");
         vlado.requestFocus();
         InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.toggleSoftInput(InputMethodManager.SHOW_FORCED,0);
     }
+
 }

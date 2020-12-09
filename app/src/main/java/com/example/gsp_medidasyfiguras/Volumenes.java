@@ -42,6 +42,10 @@ public class Volumenes extends AppCompatActivity {
                         intent = new Intent(Volumenes.this, Cono.class);
                         startActivity(intent);
                         break;
+                    case 3:
+                        intent = new Intent(Volumenes.this, Cubo.class);
+                        startActivity(intent);
+                        break;
                 }
             }
         });

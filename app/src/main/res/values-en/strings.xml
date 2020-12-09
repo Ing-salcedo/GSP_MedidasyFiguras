@@ -20,7 +20,6 @@
     <string name="operacion">Operation</string>
     <string name="datos">Data</string>
     <string name="resultado">Result</string>
-    <string name="mensaje_error_cuadrado">Enter the value of the side of the square</string>
     <string name="area_del_cuadrado">Square area</string>
     <string name="valor_base">Base value:</string>
     <string name="valor_altura">Height value:</string>
@@ -34,4 +33,6 @@
     <string name="mensaje_error_radio">Enter the value of the radius</string>
     <string name="volumen_cilindro">Volume of the cylinder</string>
     <string name="volumen_cono">Volume of the cone</string>
+    <string name="volumen_cubo">Volume of the cube</string>
+    <string name="mensaje_error_lado">Enter the value of the side</string>
 </resources>
